@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 62.5%;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-center-start {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #wrapper {
+            background-color: #292737;
+            box-sizing: border-box;
+            padding: 1rem 1rem;
+            min-height: 100vh;
+        }
+
+        #wrapper>section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            border-radius: 5px;
+            background: white;
+            padding: 1rem;
+            box-sizing: border-box;
+
+        }
+
+        .section-title {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            box-sizing: border-box;
+            color: #35c83d;
+        }
+
+        .img-wrapper {
+            width: 1.1rem;
+            height: 1.1rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: .7rem;
+        }
+
+        .section-title img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        .section-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+
+        }
+
+        .section-list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 1rem;
+
+        }
+
+        .list-top .list-icon {
+            position: relative;
+            /* padding: 0.1rem 0.2rem 0.1rem 0; */
+        }
+
+        .list-icon>img {
+            width: 90%;
+            height: 90%;
+            /* border: 1px solid red; */
+        }
+
+        .number-wrapper {
+            box-shadow: -1px 0px 1px -1px rgba(0, 0, 0, 0.9);
+            padding-left: .5rem;
+            width: 3.5rem;
+            height: 1.5rem;
+
+            /* vertical-align: bottom; */
+        }
+
+        .number-wrapper-center {
+            box-shadow: -1px 0px 1px -1px rgba(0, 0, 0, 0.9);
+            padding-left: .5rem;
+            width: 5rem;
+            height: 1.5rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .number-wrapper-center>div {
+            height: 80%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+
+        .number-wrapper>.number {
+            font-size: 1.5rem;
+            vertical-align: bottom;
+            line-height: 1.5rem;
+            color: grey;
+        }
+
+        .number-wrapper>.size {
+            font-size: .9rem;
+            color: lightgray;
+            vertical-align: bottom;
+
+        }
+
+        .number-wrapper-center .number-small {
+            font-size: 1.1rem;
+            vertical-align: bottom;
+
+            color: grey;
+
+        }
+
+        .number-wrapper-center .small-letter {
+            margin: 0 .2rem;
+            font-size: 1.1rem;
+            color: lightgray;
+        }
+
+        .number-wrapper-center .size-small {
+            font-size: .7rem;
+            vertical-align: bottom;
+            color: lightgray;
+
+        }
+
+        .list-top {
+            margin-bottom: .3rem;
+        }
+
+        .section-list>.list-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .list-bottom {
+            margin-left: 2.3rem;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <section>
+            <div class="section-title flex-center-start">
+                <div class="img-wrapper">
+                    <img src="./asset/icons/title.png">
+                </div>
+                <span>销售简报</span>
+            </div>
+            <div class="section-content">
+
+                <div class=" section-list">
+                    <div class="list-top flex-center-start">
+                        <div class="list-icon img-wrapper">
+                            <img src="./asset/icons/4.png">
+                        </div>
+                        <p class="number-wrapper">
+                            <span class="number">33</span>
+                            <span class="size">个</span>
+                        </p>
+                    </div>
+                    <div class="list-bottom">
+                        <span>新增客户数</span>
+                    </div>
+                </div>
+                <div class=" section-list">
+                    <div class="list-top flex-center-start">
+                        <div class="list-icon img-wrapper">
+                            <img src="./asset/icons/4.png">
+                        </div>
+                        <p class="number-wrapper">
+                            <span class="number">22</span>
+                            <span class="size">个</span>
+                        </p>
+                    </div>
+                    <div class="list-bottom">
+                        <span>新增联系人</span>
+                    </div>
+                </div>
+                <div class=" section-list">
+                    <div class="list-top flex-center-start">
+                        <div class="list-icon img-wrapper">
+                            <img src="./asset/icons/4.png">
+                        </div>
+                        <p class="number-wrapper">
+                            <span class="number">47</span>
+                            <span class="size">个</span>
+                        </p>
+                    </div>
+                    <div class="list-bottom">
+                        <span>新增商机数</span>
+                    </div>
+                </div>
+                <div class=" section-list">
+                    <div class="list-top flex-center-start">
+                        <div class="list-icon img-wrapper">
+                            <img src="./asset/icons/4.png">
+                        </div>
+                        <p class="number-wrapper">
+                            <span class="number">3</span>
+                            <span class="size">个</span>
+                        </p>
+                    </div>
+                    <div class="list-bottom">
+                        <span>阶段变化的商机</span>
+                    </div>
+                </div>
+                <div class="section-list">
+                    <div class="list-top flex-center-start">
+                        <div class="list-icon img-wrapper">
+                            <img src="./asset/icons/4.png">
+                        </div>
+                        <div class="number-wrapper-center ">
+                            <div>
+                                <span class="number-small">33</span>
+                                <span class="size-small">个</span>
+                                <span class="small-letter"> / </span>
+                                <span class="number-small">2</span>
+                                <span class="size-small">次</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-bottom">
+                        <span>拜访客户</span>
+                    </div>
+                </div>
+                <div class=" section-list">
+                    <div class="list-top flex-center-start">
+                        <div class="list-icon img-wrapper">
+                            <img src="./asset/icons/4.png">
+                        </div>
+                        <p class="number-wrapper">
+                            <span class="number">6</span>
+                            <span class="size">条</span>
+                        </p>
+                    </div>
+                    <div class="list-bottom">
+                        <span>新增销售记录</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
