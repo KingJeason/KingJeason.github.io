@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="wrap">
+	<form id="console">
+		<fieldset>
+			<legend>在边框上的字</legend>
+			<label>1号</label><p><span id="sss1"></span> %<span id="one"></span></p>
+			<label>2号</label><p><span id="sss2"></span> %<span id="two"></span></p>
+			<label>3号</label><p><span id="sss3"></span > %<span id="three"></span></p>
+			<label>4号</label><p><span id="sss4"></span > %<span id="four"></span></p>
+			<ul>
+				<li>笨重:30度/s 20%/s</li>
+				<li>普通:60度/s 25%/s</li>
+				<li>飞速:90度/s 30%/s</li>
+				<li>一号:25%/s</li>
+				<li>二号:40%/s</li>
+				<li>三号:50%/s</li>
+			</ul>
+			<div id="del">
+			<label>飞船类型:</label><br>
+		    <label for="benzhong">笨重</label>
+		    <input type="radio" value="笨重"  name="gender"  checked="checked" id="benzhong"/>
+		    <label for="putong">普通</label>
+		    <input type="radio" value="普通"  name="gender" id="putong"/>
+		    <label for="feisu">飞速</label>
+		    <input type="radio" value="飞速"  name="gender" id="feisu"/>
+		    <br>
+		    <label>恢复速率:</label><br>
+		    <label for="yihao">一号</label>
+		    <input type="radio" value="一号"  name="gender1"  checked="checked" id="yihao"/>
+		    <label for="erhao">二号</label>
+		    <input type="radio" value="二号"  name="gender1" id="erhao"/>
+		    <label for="sanhao">三号</label>
+		    <input type="radio" value="三号"  name="gender1" id="sanhao"/>
+			</div>
+			
+			
+		</fieldset>
+	</form>
+	<canvas id="canvas" width="800" height="600"></canvas>
+	<section id="command">
+		<div>
+			<label>飞船1:</label>
+			<button class="a">生成</button>
+			<button class="fly">起飞</button>
+			<button class="stop">停止</button>
+			<button class="over">销毁</button>
+		</div>
+		<div>
+			<label>飞船2:</label>
+			<button class="a">生成</button>
+			<button class="fly">起飞</button>
+			<button class="stop">停止</button>
+			<button class="over">销毁</button>
+		</div>
+		<div>
+			<label>飞船3:</label>
+			<button class="a">生成</button>
+			<button class="fly">起飞</button>
+			<button class="stop">停止</button>
+			<button class="over">销毁</button>
+		</div>
+		<div>
+			<label>飞船4:</label>
+			<button class="a">生成</button>
+			<button class="fly">起飞</button>
+			<button class="stop">停止</button>
+			<button class="over">销毁</button>
+		</div>
+		
+	</section>
+	
+</section>
+
+<script src="fuck.js"></script>
+<script src="ship.js"></script>
+<script src="commonFunctions.js"></script>
+</body>
+</html>

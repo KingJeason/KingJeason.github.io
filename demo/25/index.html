@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		#main{
+			margin: 0 auto;
+			width: 600px;
+			padding: 10px;
+			border: 1px solid black;
+			
+		}
+		div[class $="box"]{
+			display: flex;
+	  		border: 1px solid black;
+			padding: 10px;
+			margin: 10px;
+			flex-direction: column;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<input type="text" id="text">
+		<button>深度遍历</button>
+		<input type="text" id="add">
+		<button>添加</button>
+		<button>删除</button>
+	</section>
+	<section id="dis">
+		<div id="main" class="tree-box">Gray
+		<div class="first-box">家电
+			<div class="second-box">冰箱</div>
+			<div class="second-box">电视</div>
+		</div>
+		<div class="first-box">水果
+			<div class="second-box">苹果</div>
+			<div class="second-box">香蕉</div>
+		</div>
+		<div class="first-box">食品
+			<div class="second-box">麻辣烫</div>
+			<div class="second-box">混沌</div>
+		</div>
+	</div>
+	</section>
+	
+<script type="text/javascript" src="fuck.js"></script>
+<script type="text/javascript" src="event.js"></script>
+</body>
+</html>

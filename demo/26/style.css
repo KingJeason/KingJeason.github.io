@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrap{
+	width: 1200px;
+	margin: 20px auto;
+}
+#console{
+	width: 300px;
+	float: left;
+	margin-right: 50px;
+}
+#console fieldset{
+	height: 500px;
+	box-sizing: border-box;
+	padding: 10px;
+	position: relative;
+}
+#command{
+	clear: both;
+	position: relative;
+	top: -80px;
+	width: 300px;
+}
+canvas{
+	border: 1px solid red;
+}
+#del{
+	position: absolute;
+	top: 420px;
+	left: 0;
+}
+li{
+	list-style: none;
+}
